@@ -33,7 +33,7 @@ X <- "This is my first assignment"
 X
 ```
 
-# Adding Texts in Base R
+# Adding Text in Base R
 
 ## Example from R's help document
 
