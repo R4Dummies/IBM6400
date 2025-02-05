@@ -150,6 +150,6 @@ As seen in @fig-unemployment-population-1, As the population increases, the numb
 
 # Formatting and Documentation
 
-![*I believe I have satisfied the above requirements. Thank you :)*](First%20Time_files/Exercise%2010.png)
+![*I believe I have satisfied the above requirements. Thank you :)*](Exercise10.png)
 
 😎
