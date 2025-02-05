@@ -104,6 +104,7 @@ head(economics)
 -   `unemploy`: Number of unemployed persons (thousands)
 
 ### *Call-Out*
+
 ::: callout-note
 Let's explore `unemploy`(unemployment numbers) against `pop`(population), as they are likely correlated.
 :::
@@ -149,6 +150,6 @@ As seen in @fig-unemployment-population-1, As the population increases, the numb
 
 # Formatting and Documentation
 
-![*I believe I have satisfied the above requirements. Thank you :)*](First Time_files/Exercise 10.png)
+![*I believe I have satisfied the above requirements. Thank you :)*](First%20Time_files/Exercise%2010.png)
 
 😎
