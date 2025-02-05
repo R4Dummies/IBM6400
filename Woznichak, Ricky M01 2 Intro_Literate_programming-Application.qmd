@@ -8,7 +8,7 @@ format:
     theme: cerulean
     toc: true
     toc-depth: 4
-    number-sections: false
+    number-sections: true
     code-line-numbers: true
     code-fold: false
     code-link: true
@@ -59,13 +59,13 @@ X
 Y <- c(2, 3, 4, 5)
 ```
 
-### Multiply by 2
+## Multiply by 2
 
 ```{r}
 Y <- Y * 2  
 ```
 
-### Print Y
+## Print Y
 
 ```{r}
 Y  
@@ -103,6 +103,7 @@ head(economics)
 -   `uempmed`: Median duration of unemployment (weeks)
 -   `unemploy`: Number of unemployed persons (thousands)
 
+### *Call-Out*
 ::: callout-note
 Let's explore `unemploy`(unemployment numbers) against `pop`(population), as they are likely correlated.
 :::
