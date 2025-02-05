@@ -1,0 +1,149 @@
+---
+title: "Introduction to Literate Programming - Application Assignment"
+subtitle: "IBM 6400"
+author: "Ricky Woznichak"
+date: '2025-02-10'
+format:
+  html:
+    theme: cerulean
+    toc: true
+    toc-depth: 4
+    number-sections: false
+    code-line-numbers: true
+    code-fold: false
+    code-link: true
+    embed-resources: true
+    df-print: paged
+editor: visual
+execute: 
+  freeze: auto
+  #cache: refresh
+  warning: false
+---
+
+# Ex 1: Creating a Variable
+
+```{r}
+X <- "This is my first assignment"
+```
+
+## Print X
+
+```{r}
+X
+```
+
+# Ex 2: Adding Texts in Base R
+
+## Example from R's help document
+
+```{r}
+paste("Hello", "World", sep = " ")  
+paste0("Hello", "World")  
+paste("Number:", 1:5, sep = " ")  
+```
+
+## paste()\` function, add "and I'm loving it!" to \`X\`
+
+```{r}
+X <- paste(X, "and I'm loving it!")
+```
+
+```{r}
+X
+```
+
+# Ex 3: Creating and Modifying a Vector
+
+```{r}
+Y <- c(2, 3, 4, 5)
+```
+
+### Multiply by 2
+
+```{r}
+Y <- Y * 2  
+```
+
+### Print Y
+
+```{r}
+Y  
+```
+
+# Ex 4: Printing Variables
+
+```{r}
+X
+Y
+```
+
+# Ex 5: Finding *Maximum* and *Minimum* Values
+
+```{r}
+max(Y)
+min(Y)
+```
+
+# Ex 6: Loading `ggplot2` and Viewing `economics` Data
+
+```{r}
+library(ggplot2)
+head(economics)
+```
+
+# Ex 7 Visualizing economics Data
+
+## Variable Descriptions
+
+-   `date`: Date of data collection
+-   `pce`: Personal consumption expenditures (billions)
+-   `pop`: Total population (thousands)
+-   `psavert`: Personal savings rate (percentage)
+-   `uempmed`: Median duration of unemployment (weeks)
+-   `unemploy`: Number of unemployed persons (thousands)
+
+::: callout-note
+Let's explore `unemploy`(unemployment numbers) against `pop`(population), as they are likely correlated.
+:::
+
+### **It's GGPLOT Time!**
+
+```{r}
+#| label: fig-unemployment-population-1
+#| fig-cap: "Unemployment vs Population"
+plot <- 'ggplot'(economics, aes(x = pop, y = unemploy)) +
+  geom_point() +
+  geom_smooth(method = "lm", color = "red", se = FALSE) +
+  labs(title = "Unemployment vs Population",
+       x = "Total Population (thousands)",
+       y = "Number of Unemployed (thousands)")
+plot
+```
+
+# Ex 8: Replicating the Chart with Pipe Operator
+
+```{r}
+#| label: fig-unemployment-population-2
+#| fig-cap: "Unemployment vs Population"
+#| fig-width: 6
+#| fig-asp: 0.5
+economics |>
+  'ggplot'(aes(x = pop, y = unemploy)) +
+  geom_point(color = "red") +
+  geom_smooth(method = "lm", color = "black", se = FALSE) +
+  labs(title = "Unemployment vs Population",
+       x = "Total Population (thousands)",
+       y = "Number of Unemployed (thousands)")
+
+```
+
+# Ex 9: Findings and Cross-Reference
+
+::: {.callout-important appearance="simple"}
+## What did we learn?
+
+As seen in @fig-unemployment-population-1, As the population increases, the number of unemployed individuals also increases.This suggests that unemployment scales with population growth.
+:::
+
+# Ex 10: Formatting and Documentation
