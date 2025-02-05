@@ -145,7 +145,7 @@ economics |>
 ::: {.callout-important appearance="simple"}
 ## What did we learn?
 
-As seen in @fig-unemployment-population-1, As the population increases, the number of unemployed individuals also increases.This suggests that unemployment scales with population growth.
+As seen in @fig-unemployment-population-1, As the population increases, the number of unemployed individuals also increases. This suggests that unemployment scales with population growth.
 :::
 
 # Formatting and Documentation
