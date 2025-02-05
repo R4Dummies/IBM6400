@@ -21,15 +21,18 @@ execute:
   warning: false
 ---
 
+```{=html}
 <style>
-.wooden-frame {
-  border: 5px solid transparent;  /* Thick border */
+.brick-frame {
+  border: 7px solid transparent;  /* Thick border */
   padding: 5px;  /* Space inside frame */
-  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/006/550/927/small/realistic-texture-pattern-of-dark-wood-background-vector.jpg'); /* Wood texture */
+  background-image: url('https://images.pexels.com/photos/3373620/pexels-photo-3373620.jpeg?cs=srgb&dl=pexels-chetanvlad-3373620.jpg&fm=jpg'); /* Wood texture */
   background-size: cover; /* Cover the border fully */
   box-shadow: 5px 5px 10px rgba(0,0,0,0.6); /* Depth effect */
 }
 </style>
+```
+
 # Creating a Variable
 
 ```{r}
@@ -159,6 +162,6 @@ As seen in @fig-unemployment-population-1, As the population increases, the numb
 
 # Formatting and Documentation
 
-![*I believe I have satisfied the above requirements. Thank you :)*](Exercise10.png){width="1500" class="wooden-frame"}
+![*I believe I have satisfied the above requirements. Thank you :)*](Exercise10.png){.brick-frame fig-align="left" width="1200"}
 
 😎
