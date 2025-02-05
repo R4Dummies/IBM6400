@@ -21,7 +21,7 @@ execute:
   warning: false
 ---
 
-# Ex 1: Creating a Variable
+# Creating a Variable
 
 ```{r}
 X <- "This is my first assignment"
@@ -33,7 +33,7 @@ X <- "This is my first assignment"
 X
 ```
 
-# Ex 2: Adding Texts in Base R
+# Adding Texts in Base R
 
 ## Example from R's help document
 
@@ -53,7 +53,7 @@ X <- paste(X, "and I'm loving it!")
 X
 ```
 
-# Ex 3: Creating and Modifying a Vector
+# Creating and Modifying a Vector
 
 ```{r}
 Y <- c(2, 3, 4, 5)
@@ -71,7 +71,7 @@ Y <- Y * 2
 Y  
 ```
 
-# Ex 4: Printing Variables
+# Printing Variables
 
 ```{r}
 X
@@ -85,14 +85,14 @@ max(Y)
 min(Y)
 ```
 
-# Ex 6: Loading `ggplot2` and Viewing `economics` Data
+# Loading `ggplot2` and Viewing `economics` Data
 
 ```{r}
 library(ggplot2)
 head(economics)
 ```
 
-# Ex 7 Visualizing economics Data
+# Visualizing economics Data
 
 ## Variable Descriptions
 
@@ -122,7 +122,7 @@ plot <- 'ggplot'(economics, aes(x = pop, y = unemploy)) +
 plot
 ```
 
-# Ex 8: Replicating the Chart with Pipe Operator
+# Replicating the Chart with Pipe Operator
 
 ```{r}
 #| label: fig-unemployment-population-2
@@ -139,7 +139,7 @@ economics |>
 
 ```
 
-# Ex 9: Findings and Cross-Reference
+# Findings and Cross-Reference
 
 ::: {.callout-important appearance="simple"}
 ## What did we learn?
@@ -147,7 +147,7 @@ economics |>
 As seen in @fig-unemployment-population-1, As the population increases, the number of unemployed individuals also increases.This suggests that unemployment scales with population growth.
 :::
 
-# Ex 10: Formatting and Documentation
+# Formatting and Documentation
 
 ![*I believe I have satisfied the above requirements. Thank you :)*](First Time_files/Exercise 10.png)
 
