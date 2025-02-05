@@ -149,3 +149,5 @@ As seen in @fig-unemployment-population-1, As the population increases, the numb
 # Ex 10: Formatting and Documentation
 
 ![I believe I have satisfied the above requirements.](First Time_files/Exercise 10.png)
+
+😎
