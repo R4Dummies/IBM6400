@@ -78,7 +78,7 @@ X
 Y
 ```
 
-# Ex 5: Finding *Maximum* and *Minimum* Values
+# Finding *Maximum* and *Minimum* Values
 
 ```{r}
 max(Y)
