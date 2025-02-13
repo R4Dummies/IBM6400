@@ -1,0 +1,130 @@
+---
+title: "M02-Introduction to In-depth Literate Programming"
+author: "Ricky Woznichak"
+date: "02-17-2025"  
+format: 
+  html:
+    toc: true
+    toc-depth: 4
+    number-sections: false
+    code-link: true
+    embed-resources: true
+    theme: sketchy
+execute:
+  freeze: auto
+  allow-webembed: true  
+---
+
+# Question 1:
+
+> Summarize the instructor's lecture about Quarto that you found impressive. Do you see yourself using Quarto every day for your job or study, like taking notes in your class or preparing a presentation? More eye-catching effects will be introduced in later modules.
+
+### Personal Reflection
+
+As a digital marketing student, I can see myself using Quarto frequently for my studies and future job. Its features for organizing notes, preparing presentations, and creating reports align well with the demands of digital marketing, where data analysis and clear communication are key.
+
+Overall, Quarto's ability to integrate coding with document creation makes it a compelling tool for anyone in a data-driven field, and I would likely incorporate it into my daily routine for academic and professional tasks.
+
+Quarto is impressive for its versatility and user-friendly design, allowing users to seamlessly create documents, presentations, and websites all in one platform. Its integration with RStudio facilitates real-time coding and data visualization, making it ideal for data-driven fields like digital marketing. The emphasis on reproducibility ensures that research and analyses can be easily shared and verified, while features like cross-referencing and the ability to hide code enhance clarity and professionalism in reports. Overall, Quarto stands out as a powerful tool that combines coding, writing, and presentation capabilities, catering to both technical and non-technical audiences.
+
+### Favorite Things
+
+I especially enjoyed learning how to fold code with the [Hashpipe Operator]{.underline}
+
+-   **#\| code-fold: true** folds the code with a toggle switch to reveal for the user
+
+-   **#\| warning: false** Hides warnings
+
+-   **#\| message: false** Suppresses other informational messages from `ggplot2`.
+
+![](hashpipe_example.png)
+
+::: {.callout-tip appearance="simple"}
+## Try It!
+
+Click the arrow below...
+:::
+
+```{r}
+#| label: fig-unemployment-population-1
+#| fig-cap: "Unemployment vs Population"
+#| code-fold: true
+#| warning: false
+#| message: false
+
+library(ggplot2)
+plot <- ggplot(economics, aes(x = pop, y = unemploy)) +
+  geom_point() +
+  geom_smooth(method = "lm", color = "red", se = FALSE) +
+  labs(title = "Unemployment vs Population",
+       x = "Total Population (thousands)",
+       y = "Number of Unemployed (thousands)")
+plot
+```
+
+# Question 2:
+
+> Summary of the video from Posit about Quarto's capabilities.
+
+### The Answer
+
+The video by Posit on Quarto’s capabilities is an excellent introduction to this robust open-source system for scientific and technical publishing. Quarto is constructed on R Markdown but with an extended feature set to create dynamic documents, reports, and websites while using R, Python, and Julia. This versatility is advantageous for data scientists and academics who frequently utilize different coding languages.
+
+Quarto functionalities include strong interactive support. It allows users to add HTML widgets for R and Jupyter widgets for Python and Julia, enabling the documents to have rich interactivity. In addition, Quarto supports Observable JavaScript natively, which increases the capabilities of data visualization and makes it possible to construct reactive components which respond in the user’s browser directly.
+
+Furthermore, the video demonstrates how Quarto integrates in popular development addons, such as RStudio, VSCode, and Jupyter Lab. From the integrated RStudio visual editor, Quarto supports interactive documents in RStudio are previewed in real-time, allowing the user to edit and format the content without the constant rendering. The configuration system using YAML interface lets the user set any settings for the document, such as output formats and settings for the table of contents, in simple steps.
+
+Quarto offers several options for publishing, including Quarto Pub, GitHub Pages, RStudio Connect, and Netlify, for those who want to share their work. It is simple and efficient to share research and documents with the audience. In addition, Quarto is built for collaboration, as teams can work on any project using the programming languages of their choice.
+
+As far as coding efficiency, Quarto offers several shortcuts to enhance the user experience. For instance, to quickly add a code chunk, users can press Ctrl + Alt + I (or Cmd + Option + I for Mac). We can press Ctrl + Shift + P (or Cmd + Shift + P for Mac) to reach the command palette and search commands. This command palette allows for fast navigation and completion of tasks without the need to memorize all commands.
+
+Overall, the video is focused on Quorto’s versatility, ease of use, and ability to create interactive, visually engaging documents for diverse professional and educational environments. With focus on user cooperation, interactivity, and intuitive features, Quarto is positioned as one of the top tools for modern data-driven workflows.
+
+# Question 3
+
+> Choose a previous class assignment where you had to write a couple of pages. Copy it into Quarto and style it to make it *nice*.
+
+## A Reflection on Baskin Robbins from IBM 6500
+
+### Question 10. p733
+
+1.  The management decision problem confronting the Baskin-Robbins executive group, including Ken Kimmel, is whether Baskin-Robbins should change its logo as part of a full store redesign to better compete in the market, refresh its brand image, and potentially attract more customers. Also, should it retain the current logo to maintain brand recognition and loyalty?
+
+    This problem arises from increased competition from new entrants like Cold Stone Creamery, changing customer preferences for in-store experiences, and the significant costs associated with both the store redesign and a logo change. The decision also involves considering the potential synergy between a new logo and the redesigned stores and weighing the risks of changing their iconic and historical logo that customers may have developed strong attachments to over the years.
+
+2.  The marketing research problem corresponding to the management decision problem is to determine customer attitudes toward both the current and proposed new logos, especially within the context of the redesigned store interiors, and to assess whether the new logo is preferred by customers by at least a 2:1 margin over the old logo to justify making the change.
+
+    This research problem involves conducting surveys or experiments to understand customer preferences, evaluating the impact of the redesigned stores on customer perception of the logos, and measuring the strength of customer attachment to the current logo versus their receptiveness to the new logo.
+
+3.  The linkages between the management decision problem and the marketing research problem are as follows:
+
+    1.  The management decision to change or retain the logo is directly dependent on understanding customer preferences and attitudes, which is the focus of the marketing research problem.
+
+    2.  The management decision involves weighing the risks of changing an established brand element. The marketing research problem addresses this by measuring customer attachment to the current logo and assessing if the new logo resonates enough to make a change viable.
+
+    3.  The decision problem considers potential synergy between the new logo and redesigned stores, while the research problem involves evaluating customer preferences in the context of the new store design to determine if a synergistic effect exists.
+
+    4.  The significant cost of changing the logo requires justification. The research problem aims to provide this justification by establishing a clear margin of preference (2:1) for the new logo, ensuring the investment will likely yield positive results.
+
+These linkages show that the marketing research problem is designed to provide the necessary insights and data to support the management decision, making them closely connected and interdependent.
+
+### Question 11. p733
+
+The specific research question suggested in this case is: "Do customers prefer the new Baskin-Robbins logo over the existing logo when considered in the context of the redesigned store interiors?"This question aims to explore customer preferences for the new logo compared to the existing logo, particularly after they are introduced to the new store design. It seeks to understand whether the new logo aligns better with the refreshed store concept and overall brand positioning.
+
+The specific research question suggested in this case is: "Do customers prefer the new Baskin-Robbins logo over the existing logo when considered in the context of the redesigned store interiors?"This question aims to explore customer preferences for the new logo compared to the existing logo, particularly after they are introduced to the new store design. It seeks to understand whether the new logo aligns better with the refreshed store concept and overall brand positioning.
+
+The hypothesis that aligns with the research question could be formulated as:
+
+H0 (Null Hypothesis): There is no significant preference for the new logo over the existing logo among customers when considered in the context of the redesigned store interiors.
+
+H1 (Alternative Hypothesis): Customers significantly prefer the new logo over the existing logo by at least a 2:1 margin when considered in the context of the redesigned store interiors.
+
+The alternative hypothesis (H1) reflects the management's requirement that a clear preference (2:1 ratio) for the new logo must be established for it to justify a change. If the data supports the alternative hypothesis, Baskin-Robbins could move forward with the logo change; otherwise, the existing logo might be retained.
+
+And it seems as though, Baskin Robbins’ latest logo redesign took place in 2022. Sounds like they met their 2:1 ratio.
+
+# And Now We Dance
+> Is it safe to dance?
+
+{{< video https://www.youtube.com/embed/nM4okRvCg2g?si=-YQCRmkRBuVMU9LC >}}
