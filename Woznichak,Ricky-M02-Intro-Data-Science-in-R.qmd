@@ -4,12 +4,12 @@ author: "Ricky Woznichak"
 date: "02-17-2025"  
 format: 
   html:
+    theme: sketchy
     toc: true
     toc-depth: 4
     number-sections: false
     code-link: true
     embed-resources: true
-    theme: sketchy
 execute:
   freeze: auto
   allow-webembed: true  
@@ -19,7 +19,7 @@ execute:
 
 > Summarize the instructor's lecture about Quarto that you found impressive. Do you see yourself using Quarto every day for your job or study, like taking notes in your class or preparing a presentation? More eye-catching effects will be introduced in later modules.
 
-### Personal Reflection
+## Personal Reflection
 
 As a digital marketing student, I can see myself using Quarto frequently for my studies and future job. Its features for organizing notes, preparing presentations, and creating reports align well with the demands of digital marketing, where data analysis and clear communication are key.
 
@@ -40,7 +40,7 @@ I especially enjoyed learning how to fold code with the [Hashpipe Operator]{.und
 ![](hashpipe_example.png)
 
 ::: {.callout-tip appearance="simple"}
-## Try It!
+### Try It!
 
 Click the arrow below...
 :::
@@ -66,7 +66,7 @@ plot
 
 > Summary of the video from Posit about Quarto's capabilities.
 
-### The Answer
+## The Answer
 
 The video by Posit on Quarto’s capabilities is an excellent introduction to this robust open-source system for scientific and technical publishing. Quarto is constructed on R Markdown but with an extended feature set to create dynamic documents, reports, and websites while using R, Python, and Julia. This versatility is advantageous for data scientists and academics who frequently utilize different coding languages.
 
@@ -79,6 +79,17 @@ Quarto offers several options for publishing, including Quarto Pub, GitHub Pages
 As far as coding efficiency, Quarto offers several shortcuts to enhance the user experience. For instance, to quickly add a code chunk, users can press Ctrl + Alt + I (or Cmd + Option + I for Mac). We can press Ctrl + Shift + P (or Cmd + Shift + P for Mac) to reach the command palette and search commands. This command palette allows for fast navigation and completion of tasks without the need to memorize all commands.
 
 Overall, the video is focused on Quorto’s versatility, ease of use, and ability to create interactive, visually engaging documents for diverse professional and educational environments. With focus on user cooperation, interactivity, and intuitive features, Quarto is positioned as one of the top tools for modern data-driven workflows.
+
+### Publishing is Easy!
+
+```{=html}
+<img src="QuartoPub.png" alt="If you can see this online, then it worked." 
+     style="border: 3px solid black; width: 100%; max-width: 700px; display: block; margin: auto;">
+```
+
+::: callout-important
+## If you can read this, then it worked :)
+:::
 
 # Question 3
 
