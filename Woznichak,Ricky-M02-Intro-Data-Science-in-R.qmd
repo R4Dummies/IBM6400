@@ -88,8 +88,18 @@ Overall, the video is focused on Quorto’s versatility, ease of use, and abilit
 ```
 
 ::: callout-important
-## If you can read this, then it worked :)
+If you can read this, then it worked :)
 :::
+
+## Did You Know...
+
+R Studio has a Shortcuts Menu?!
+
+-   Windows users press Alt + Shift + K
+
+-   Mac users press Option + Shift + K
+
+![](CommandsMenu.png)
 
 # Question 3
 
