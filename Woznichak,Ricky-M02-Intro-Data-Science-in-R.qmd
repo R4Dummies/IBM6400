@@ -125,6 +125,9 @@ The alternative hypothesis (H1) reflects the management's requirement that a cle
 And it seems as though, Baskin Robbins’ latest logo redesign took place in 2022. Sounds like they met their 2:1 ratio.
 
 # And Now We Dance
-> Is it safe to dance?
+
+::: callout-caution
+## Is it safe to dance?
+:::
 
 {{< video https://www.youtube.com/embed/nM4okRvCg2g?si=-YQCRmkRBuVMU9LC >}}
